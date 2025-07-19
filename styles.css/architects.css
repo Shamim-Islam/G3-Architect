@@ -67,6 +67,17 @@ main > section {
     margin-top: 130px;
 }
 
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.section-description {
+    margin-top: 28px;
+    margin-bottom: 35px;
+    max-width: 550px;
+}
+
 /* navbar related styles */
 
 .navbar {
@@ -148,11 +159,6 @@ main > section {
     max-width: 550px;
 }
 
-.features-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-}
-
 span#part-1 {
     font-weight: 500;
 }
@@ -161,15 +167,41 @@ span#part-2 {
     color: rgb(255, 144, 14);
 }
 
-.features-description {
-    margin-top: 28px;
-    margin-bottom: 35px;
-}
-
 .our-features > .btn-primary {
     margin-bottom: 0;
 }
 
+/* some facts section */
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 130px;
+    margin: 100px;
+}
+
+.fact-card {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 10px;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 8px;
+
+}
+
+.fact-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 
 
 
@@ -192,7 +224,8 @@ span#part-2 {
         flex-direction: column;
         align-items: center;
     }
-    .teams {
+    .teams,
+    .fact-container {
         gap: 50px;
     }
     .nav-item {
@@ -205,11 +238,24 @@ span#part-2 {
     .banner-title {
         margin-top: 50px;
     }
-    .team-img-container {
+    .team-img-container,
+    .fact-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .our-features {
+    .team-img-container {
+        margin-top: 50px;
+    }
+    .our-features, .facts {
         padding: 30px;
+    }
+    .fact-container {
+        margin: 60px auto;
+    }
+    .fact-card {
+        margin: 20px auto;
+    }
+    main > section {
+        margin-top: 60px;
     }
 }
 
@@ -231,6 +277,9 @@ span#part-2 {
     }
     .our-features {
         margin: 0px auto 50px auto;
+    }
+    .fact-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

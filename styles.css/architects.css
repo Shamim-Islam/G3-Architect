@@ -171,6 +171,51 @@ span#part-2 {
     margin-bottom: 0;
 }
 
+/* Features sections */
+
+.features {
+    display: flex;
+    gap: 140px;
+}
+
+#feature-section-title {
+    border-left: 5px solid  rgb(255, 144, 14);
+    padding-left: 21px;
+}
+
+.features-card {
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    max-width: 586px;
+    /* background: rgb(255, 255, 255); */
+}
+
+.features-card > .feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.features img {
+    width: 100%;
+}
+
+#experience-year {
+    font-size: 4.1rem;
+    font-weight: 700;
+}
+#experience-batch {
+    padding: 45px 42px;
+}
+
+#experience-batch span:last-child {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
 /* some facts section */
 .fact-container {
     display: grid;
@@ -222,8 +267,20 @@ span#part-2 {
     filter: grayscale(100%);
 }
 
+/* footer section */
 
+footer {
+    max-width: 1440px;
+    margin: 130px auto 200px auto;
+    background: rgb(255, 244, 231);
+    text-align: center;
+    border-radius: 8px;
+    padding: 40px;
+}
 
+.footer-txt {
+    font-size: 1.25rem;
+}
 
 
 
@@ -275,8 +332,9 @@ span#part-2 {
     main > section {
         margin-top: 60px;
     }
-
-
+    footer {
+        margin: 100px auto;
+    }
 }
 
 /* Medium size devices like tablets or landscap size of mobiles */
@@ -308,7 +366,9 @@ span#part-2 {
     .facts > .section-description {
         margin-left: 30px;
     }
-    
+    footer {
+        margin: 100px auto;
+    }
 
 }
 

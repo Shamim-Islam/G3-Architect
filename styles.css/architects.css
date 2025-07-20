@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 * {
@@ -92,7 +92,7 @@ main > section {
 }
 
 .brand > span {
-   color: rgb(255, 144, 14);
+    color: rgb(255, 144, 14);
 }
 
 .nav-item {
@@ -188,8 +188,6 @@ span#part-2 {
     margin-bottom: 35px;
     border-radius: 8px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-    max-width: 586px;
-    /* background: rgb(255, 255, 255); */
 }
 
 .features-card > .feature-title {
@@ -198,23 +196,24 @@ span#part-2 {
     margin-bottom: 10px;
 }
 
-.features img {
+.features-right img {
     width: 100%;
 }
 
-#experience-year {
-    font-size: 4.1rem;
-    font-weight: 700;
-}
 #experience-batch {
-    padding: 45px 42px;
+    padding: 40px 35px;
+    margin-left: -100px;
+    margin-top: -120px;
+}
+#experience-year {
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 #experience-batch span:last-child {
     font-size: 1.5rem;
     font-weight: 500;
 }
-
 
 /* some facts section */
 .fact-container {
@@ -240,7 +239,6 @@ span#part-2 {
     font-weight: 600;
     margin-top: 12px;
     margin-bottom: 8px;
-
 }
 
 .fact-name {
@@ -293,7 +291,8 @@ footer {
 @media screen and (max-width: 576px) {
     .navbar,
     .nav-links,
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
         align-items: center;
     }
@@ -324,6 +323,21 @@ footer {
     .our-features, .facts {
         padding: 30px;
     }
+    .features {
+        gap: 40px;
+    }
+    .features-left .section-title, .features-left .section-description {
+        margin-left: 25px;
+    }
+    .features-card {
+        padding: 25px;
+    }
+
+    #experience-batch {
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+   
     .fact-container,
     .sponsors-companies {
         margin: 60px auto;
@@ -350,11 +364,19 @@ footer {
     main > section {
         margin-top: 60px;
     }
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
     }
     .our-features {
         margin: 0px auto 50px auto;
+    }
+    .features {
+        gap: 40px;
+    }
+    #experience-batch {
+        margin-top: 20px;
+        margin-left: 45px;
     }
     .fact-container,
     .sponsors-companies {
